@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Icons - Vicar Oil</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0d1b31;
+      color: #fff;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 { color: #FFD700; margin-bottom: 30px; }
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .icon-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+    .icon-card h3 { margin: 20px 0 10px; color: #8cdeff; }
+    .icon-card p { color: #c0d8f0; font-size: 14px; }
+    .icon-preview {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>SVG Icons for Vicar Oil</h1>
+  <p>Color palette: #003366 (dark blue), #FFD700 (gold), #FFFFFF (white)</p>
+  
+  <div class="icon-grid">
+    <!-- Gasoline Icon -->
+    <div class="icon-card">
+      <div class="icon-preview">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gasBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#003366"/>
+              <stop offset="100%" style="stop-color:#004d99"/>
+            </linearGradient>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#FFD700"/>
+              <stop offset="100%" style="stop-color:#FFA500"/>
+            </linearGradient>
+            <filter id="shadow">
+              <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+            </filter>
+          </defs>
+          <!-- Background Circle -->
+          <circle cx="60" cy="60" r="54" fill="url(#gasBlue)" stroke="url(#goldGrad)" stroke-width="2"/>
+          <!-- Gas Pump/Fuel Icon -->
+          <g filter="url(#shadow)">
+            <!-- Nozzle -->
+            <rect x="45" y="25" width="14" height="20" rx="2" fill="#fff"/>
+            <rect x="48" y="20" width="8" height="8" rx="1" fill="#FFD700"/>
+            <!-- Hose -->
+            <path d="M52 45 Q52 55 45 60 L45 75" stroke="#FFD700" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <!-- Pump Body -->
+            <rect x="35" y="50" width="34" height="45" rx="4" fill="rgba(255,255,255,0.15)"/>
+            <rect x="40" y="58" width="24" height="12" rx="2" fill="#FFD700"/>
+            <rect x="40" y="75" width="24" height="3" fill="rgba(255,255,255,0.5)"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Бензин</h3>
+      <p>Минималистичная иконка с золотым акцентом</p>
+    </div>
+
+    <!-- Diesel Icon -->
+    <div class="icon-card">
+      <div class="icon-preview">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="dieselBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#003366"/>
+              <stop offset="100%" style="stop-color:#004d99"/>
+            </linearGradient>
+            <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#FFD700"/>
+              <stop offset="100%" style="stop-color:#FFA500"/>
+            </linearGradient>
+            <filter id="shadow2">
+              <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+            </filter>
+          </defs>
+          <circle cx="60" cy="60" r="54" fill="url(#dieselBlue)" stroke="url(#goldGrad2)" stroke-width="2"/>
+          <g filter="url(#shadow2)">
+            <!-- Tank Body -->
+            <rect x="35" y="30" width="50" height="60" rx="6" fill="rgba(255,255,255,0.15)"/>
+            <!-- Fuel Drop -->
+            <path d="M60 42 C60 42 48 55 48 62 C48 67 53 72 60 72 C67 72 72 67 72 62 C72 55 60 42 60 42Z" fill="#FFD700"/>
+            <!-- Gauge -->
+            <circle cx="60" cy="78" r="8" fill="rgba(255,255,255,0.2)"/>
+            <circle cx="60" cy="78" r="5" fill="#FFD700"/>
+            <!-- Pipes -->
+            <rect x="30" y="40" width="8" height="4" rx="1" fill="#FFD700"/>
+            <rect x="82" y="40" width="8" height="4" rx="1" fill="#FFD700"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Дизель</h3>
+      <p>Капля топлива с индикатором уровня</p>
+    </div>
+
+    <!-- Kerosene Icon -->
+    <div class="icon-card">
+      <div class="icon-preview">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="keroBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#003366"/>
+              <stop offset="100%" style="stop-color:#004d99"/>
+            </linearGradient>
+            <linearGradient id="goldGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#FFD700"/>
+              <stop offset="100%" style="stop-color:#FFA500"/>
+            </linearGradient>
+            <filter id="shadow3">
+              <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+            </filter>
+            <linearGradient id="flame" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" style="stop-color:#FFD700"/>
+              <stop offset="50%" style="stop-color:#FFA500"/>
+              <stop offset="100%" style="stop-color:#FF6600"/>
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="54" fill="url(#keroBlue)" stroke="url(#goldGrad3)" stroke-width="2"/>
+          <g filter="url(#shadow3)">
+            <!-- Flame -->
+            <path d="M60 25 Q50 45 50 55 Q50 70 60 70 Q70 70 70 55 Q70 45 60 25Z" fill="url(#flame)" opacity="0.9">
+              <animate attributeName="d" dur="0.8s" repeatCount="indefinite"
+                values="M60 25 Q50 45 50 55 Q50 70 60 70 Q70 70 70 55 Q70 45 60 25Z;
+                        M60 22 Q48 42 52 58 Q52 72 60 72 Q68 72 68 58 Q72 42 60 22Z;
+                        M60 25 Q50 45 50 55 Q50 70 60 70 Q70 70 70 55 Q70 45 60 25Z"/>
+            </path>
+            <!-- Lantern/Container -->
+            <rect x="48" y="68" width="24" height="20" rx="2" fill="rgba(255,255,255,0.2)"/>
+            <rect x="52" y="85" width="16" height="3" fill="#FFD700"/>
+          </g>
+        </svg>
+      </div>
+      <h3>Керосин</h3>
+      <p>Анимированное пламя (для авиационного)</p>
+    </div>
+  </div>
+</body>
+</html>

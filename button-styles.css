@@ -1,0 +1,195 @@
+/* ============================================
+   Vicar Oil - CTA Button Styles
+   Color Palette: #003366 (dark blue), #FFD700 (gold), #FFFFFF (white)
+   ============================================ */
+
+/* Primary CTA Button - Dark Blue with Gold Border */
+.btn-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+  /* Dark blue background */
+  background: linear-gradient(135deg, #003366 0%, #004080 100%);
+  /* Gold border */
+  border: 2px solid #FFD700;
+  /* White text */
+  color: #FFFFFF;
+  
+  /* Subtle shadow */
+  box-shadow: 0 8px 24px rgba(0, 51, 102, 0.4);
+}
+
+.btn-cta-primary:hover {
+  /* Gold background on hover */
+  background: linear-gradient(135deg, #FFD700 0%, #FFC000 100%);
+  /* Dark blue text on hover */
+  color: #003366;
+  /* Enhanced shadow */
+  box-shadow: 0 12px 32px rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-cta-primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary CTA Button - Outline Style */
+.btn-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+  /* Transparent background */
+  background: transparent;
+  /* Gold border */
+  border: 2px solid #FFD700;
+  /* Gold text */
+  color: #FFD700;
+}
+
+.btn-cta-secondary:hover {
+  /* Gold background on hover */
+  background: #FFD700;
+  /* Dark blue text */
+  color: #003366;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3);
+}
+
+/* Icon Button (smaller, for mobile) */
+.btn-cta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  transition: all 0.25s ease;
+  
+  background: #003366;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+}
+
+.btn-cta-icon:hover {
+  background: #FFD700;
+  color: #003366;
+  transform: scale(1.05);
+}
+
+/* Ghost Button - Subtle version */
+.btn-cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+  background: rgba(0, 51, 102, 0.3);
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  color: #FFD700;
+}
+
+.btn-cta-ghost:hover {
+  background: rgba(255, 215, 0, 0.15);
+  border-color: #FFD700;
+  transform: translateY(-1px);
+}
+
+/* Pill Button - Rounded full */
+.btn-cta-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+  background: linear-gradient(135deg, #003366 0%, #004080 100%);
+  border: 2px solid #FFD700;
+  color: #FFFFFF;
+}
+
+.btn-cta-pill:hover {
+  background: linear-gradient(135deg, #FFD700 0%, #FFC000 100%);
+  color: #003366;
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.35);
+}
+
+/* Arrow Animation for CTAs */
+.btn-cta-primary .arrow,
+.btn-cta-secondary .arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.btn-cta-primary:hover .arrow,
+.btn-cta-secondary:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Focus States for Accessibility */
+.btn-cta-primary:focus-visible,
+.btn-cta-secondary:focus-visible,
+.btn-cta-icon:focus-visible,
+.btn-cta-ghost:focus-visible,
+.btn-cta-pill:focus-visible {
+  outline: 2px solid #FFD700;
+  outline-offset: 3px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn-cta-primary,
+  .btn-cta-secondary,
+  .btn-cta-icon,
+  .btn-cta-ghost,
+  .btn-cta-pill {
+    transition: none;
+  }
+  
+  .btn-cta-primary:hover,
+  .btn-cta-secondary:hover,
+  .btn-cta-icon:hover,
+  .btn-cta-ghost:hover,
+  .btn-cta-pill:hover {
+    transform: none;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .btn-cta-primary,
+  .btn-cta-secondary {
+    padding: 14px 22px;
+    font-size: 0.95rem;
+  }
+}

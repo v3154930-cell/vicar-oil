@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Patterns - Vicar Oil</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0d1b31;
+      color: #fff;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 { color: #FFD700; margin-bottom: 10px; }
+    .subtitle { color: #c0d8f0; margin-bottom: 40px; }
+    .pattern-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+    .pattern-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .pattern-card h3 { color: #8cdeff; margin-bottom: 15px; }
+    .pattern-preview {
+      height: 200px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      background: #003366;
+    }
+    .pattern-code {
+      background: rgba(0,0,0,0.3);
+      padding: 15px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 12px;
+      color: #FFD700;
+      overflow-x: auto;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <h1>SVG Patterns for Vicar Oil</h1>
+  <p class="subtitle">15% opacity overlays with #003366 (dark blue) and #FFD700 (gold) accents</p>
+
+  <div class="pattern-grid">
+    <!-- Oil Droplet Pattern -->
+    <div class="pattern-card">
+      <h3>Oil Droplet Pattern</h3>
+      <div class="pattern-preview" style="background: 
+        url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22><circle cx=%2230%22 cy=%2230%22 r=%2210%22 fill=%22%23003366%22 opacity=%220.15%22/><ellipse cx=%2230%22 cy=%2233%22 rx=%227%22 ry=%228%22 fill=%22%23003366%22 opacity=%220.1%22/></svg>') repeat;
+      }"></div>
+      <div class="pattern-code">&lt;pattern id="oil-droplet" width="60" height="60"&gt;
+  &lt;circle cx="30" cy="30" r="10" fill="%23003366" opacity="0.15"/&gt;
+  &lt;ellipse cx="30" cy="33" rx="7" ry="8" fill="%23003366" opacity="0.1"/&gt;
+&lt;/pattern&gt;</div>
+    </div>
+
+    <!-- Pipeline Pattern -->
+    <div class="pattern-card">
+      <h3>Pipeline Pattern</h3>
+      <div class="pattern-preview" style="background: 
+        url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2240%22><line x1=%220%22 y1=%2220%22 x2=%2280%22 y2=%2220%22 stroke=%22%23FFD700%22 stroke-width=%222%22 opacity=%220.15%22/><line x1=%220%22 y1=%2220%22 x2=%2280%22 y2=%2220%22 stroke=%22%23003366%22 stroke-width=%226%22 opacity=%220.1%22/><circle cx=%220%22 cy=%2220%22 r=%224%22 fill=%22%23FFD700%22 opacity=%220.15%22/><circle cx=%2280%22 cy=%2220%22 r=%224%22 fill=%22%23FFD700%22 opacity=%220.15%22/></svg>') repeat;
+      }"></div>
+      <div class="pattern-code">&lt;pattern id="pipeline" width="80" height="40"&gt;
+  &lt;line x1="0" y1="20" x2="80" y2="20" stroke="%23FFD700" stroke-width="2" opacity="0.15"/&gt;
+  &lt;line x1="0" y1="20" x2="80" y2="20" stroke="%23003366" stroke-width="6" opacity="0.1"/&gt;
+  &lt;circle cx="0" cy="20" r="4" fill="%23FFD700" opacity="0.15"/&gt;
+  &lt;circle cx="80" cy="20" r="4" fill="%23FFD700" opacity="0.15"/&gt;
+&lt;/pattern&gt;</div>
+    </div>
+
+    <!-- Geometric Grid Pattern -->
+    <div class="pattern-card">
+      <h3>Geometric Grid Pattern</h3>
+      <div class="pattern-preview" style="background: 
+        url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22><path d=%22M0 20 L40 20 M20 0 L20 40%22 stroke=%22%23FFD700%22 stroke-width=%220.5%22 opacity=%220.15%22/><rect width=%2240%22 height=%2240%22 fill=%22none%22 stroke=%22%23003366%22 stroke-width=%220.5%22 opacity=%220.1%22/></svg>') repeat;
+      }"></div>
+      <div class="pattern-code">&lt;pattern id="grid-pattern" width="40" height="40"&gt;
+  &lt;path d="M0 20 L40 20 M20 0 L20 40" stroke="%23FFD700" stroke-width="0.5" opacity="0.15"/&gt;
+  &lt;rect width="40" height="40" fill="none" stroke="%23003366" stroke-width="0.5" opacity="0.1"/&gt;
+&lt;/pattern&gt;</div>
+    </div>
+
+    <!-- Hexagon Industrial Pattern -->
+    <div class="pattern-card">
+      <h3>Hexagon Industrial Pattern</h3>
+      <div class="pattern-preview" style="background: 
+        url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2243%22><polygon points=%2225,0 50,12.5 50,37.5 25,50 0,37.5 0,12.5%22 fill=%22none%22 stroke=%22%23FFD700%22 stroke-width=%221%22 opacity=%220.15%22/><polygon points=%2225,8 42,16 42,34 25,42 8,34 8,16%22 fill=%22none%22 stroke=%22%23003366%22 stroke-width=%221%22 opacity=%220.1%22/></svg>') repeat;
+      }"></div>
+      <div class="pattern-code">&lt;pattern id="hex-pattern" width="50" height="43"&gt;
+  &lt;polygon points="25,0 50,12.5 50,37.5 25,50 0,37.5 0,12.5" fill="none" stroke="%23FFD700" stroke-width="1" opacity="0.15"/&gt;
+  &lt;polygon points="25,8 42,16 42,34 25,42 8,34 8,16" fill="none" stroke="%23003366" stroke-width="1" opacity="0.1"/&gt;
+&lt;/pattern&gt;</div>
+    </div>
+
+    <!-- Dot Matrix Pattern -->
+    <div class="pattern-card">
+      <h3>Dot Matrix Pattern</h3>
+      <div class="pattern-preview" style="background: 
+        url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2230%22 height=%2230%22><circle cx=%2215%22 cy=%2215%22 r=%223%22 fill=%22%23FFD700%22 opacity=%220.15%22/><circle cx=%220%22 cy=%220%22 r=%222%22 fill=%22%23003366%22 opacity=%220.1%22/><circle cx=%2230%22 cy=%220%22 r=%222%22 fill=%22%23003366%22 opacity=%220.1%22/><circle cx=%220%22 cy=%2230%22 r=%222%22 fill=%22%23003366%22 opacity=%220.1%22/><circle cx=%2230%22 cy=%2230%22 r=%222%22 fill=%22%23003366%22 opacity=%220.1%22/></svg>') repeat;
+      }"></div>
+      <div class="pattern-code">&lt;pattern id="dot-matrix" width="30" height="30"&gt;
+  &lt;circle cx="15" cy="15" r="3" fill="%23FFD700" opacity="0.15"/&gt;
+  &lt;circle cx="0" cy="0" r="2" fill="%23003366" opacity="0.1"/&gt;
+  &lt;circle cx="30" cy="0" r="2" fill="%23003366" opacity="0.1"/&gt;
+  &lt;circle cx="0" cy="30" r="2" fill="%23003366" opacity="0.1"/&gt;
+  &lt;circle cx="30" cy="30" r="2" fill="%23003366" opacity="0.1"/&gt;
+&lt;/pattern&gt;</div>
+    </div>
+
+    <!-- Wave Flow Pattern -->
+    <div class="pattern-card">
+      <h3>Wave Flow Pattern</h3>
+      <div class="pattern-preview" style="background: 
+        url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%2240%22><path d=%22M0 20 Q25 5 50 20 T100 20%22 fill=%22none%22 stroke=%22%23FFD700%22 stroke-width=%221.5%22 opacity=%220.15%22/><path d=%22M0 20 Q25 35 50 20 T100 20%22 fill=%22none%22 stroke=%22%23003366%22 stroke-width=%223%22 opacity=%220.08%22/></svg>') repeat;
+      }"></div>
+      <div class="pattern-code">&lt;pattern id="wave-flow" width="100" height="40"&gt;
+  &lt;path d="M0 20 Q25 5 50 20 T100 20" fill="none" stroke="%23FFD700" stroke-width="1.5" opacity="0.15"/&gt;
+  &lt;path d="M0 20 Q25 35 50 20 T100 20" fill="none" stroke="%23003366" stroke-width="3" opacity="0.08"/&gt;
+&lt;/pattern&gt;</div>
+    </div>
+  </div>
+</body>
+</html>
